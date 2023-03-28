@@ -6,16 +6,15 @@
     <h5>Rules:</h5>
     <ol>
         <li>Each correct answer gives you 10 points</li>
-        <li>Each correct answer gives you 10 points</li>
-        <li>Each correct answer gives you 10 points</li>
-        <li>Each correct answer gives you 10 points</li>
+        <li>Each incorrect answer gives you -10 points</li>
+        <li>60 seconds will be provided for each question</li>
         <li>Try to answer all the questions</li>
     </ol>
     <h1 class="text-center">All the best</h1>
     
     
     <label>Before we start can we have your Name?</label>
-    <input type="text" class="form-control w-50" placeholder="enter your full name">
+    <input [(ngModel)]="uname" name="user" id="usrnm" type="text" class="form-control w-50" placeholder="enter your full name">
     <!-- <input type="text" class="form-control w-50" placeholder="Email"> -->
-    <button class="btn btn-primary mt-3" routerLink="/questions">Start The Quiz!!</button>
+    <button class="btn btn-primary mt-3"  (click)="onSave()">Start The Quiz!!</button>
 </div>
